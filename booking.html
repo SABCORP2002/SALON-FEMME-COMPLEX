@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salon Femme | Booking</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="page-container">
+    <section class="booking-section">
+      <header class="booking-header reveal">
+        <p class="eyebrow">Appointment Request</p>
+        <h1>Book Your Visit In Minutes</h1>
+        <p>Choose your preferred service and time. We receive and review every request directly by email.</p>
+      </header>
+      <div class="booking-grid">
+        <form class="booking-form reveal" id="booking-form">
+          <label>Full Name<input name="clientName" required minlength="2" /></label>
+          <label>Phone Number<input name="phone" required /></label>
+          <label>Email Address<input type="email" name="email" required /></label>
+          <label>Service<select name="service" required><option value="">Select a service</option></select></label>
+          <label>Date<input type="date" name="date" required /></label>
+          <label>Time Slot<select name="time" required><option value="">Select a time</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option></select></label>
+          <label>Preferred Stylist (Optional)<input name="stylist" /></label>
+          <label>Notes (Optional)<textarea name="notes" rows="4"></textarea></label>
+          <button class="btn primary" type="submit">Send Booking Request</button>
+        </form>
+        <aside class="booking-summary reveal" id="booking-summary"></aside>
+      </div>
+      <p id="booking-status"></p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

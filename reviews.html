@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salon Femme | Reviews</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="page-container">
+    <section class="reviews-page">
+      <header class="reviews-header reveal">
+        <p class="eyebrow">Client Feedback</p>
+        <h1>What Clients Say About Salon Femme</h1>
+        <p>Real service feedback from women who booked appointments at our salon.</p>
+      </header>
+      <div class="reviews-summary reveal" id="reviews-summary"></div>
+      <div class="reviews-layout">
+        <section class="reviews-list reveal" id="reviews-list" aria-label="Client reviews"></section>
+        <aside class="review-form-wrap reveal">
+          <h2>Leave Your Review</h2>
+          <p>Share your experience to help new clients choose the right service.</p>
+          <form class="review-form" id="review-form">
+            <label>Your Name<input name="name" required /></label>
+            <label>Service<select name="service" required><option value="">Select service</option></select></label>
+            <label>Rating<select name="rating"><option value="5">5 - Excellent</option><option value="4">4 - Very Good</option><option value="3">3 - Good</option><option value="2">2 - Fair</option><option value="1">1 - Poor</option></select></label>
+            <label>Review<textarea name="comment" rows="5" required></textarea></label>
+            <button type="submit" class="btn primary">Submit Review</button>
+          </form>
+          <p id="review-status"></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/layout.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>
